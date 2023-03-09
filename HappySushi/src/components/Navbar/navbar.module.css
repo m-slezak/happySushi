@@ -7,10 +7,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-sizing: border-box;
+  position: fixed;
+
+  left: 0;
+  right: 2rem;
+  margin: auto;
+  z-index: 999;
   width: 100%;
-  height: 80px;
+  max-width: 1200px;
+  height: 6rem;
+  background: #181818;
   padding: 2rem;
-  background: red;
 }
 
 .navbar nav ul {
@@ -19,7 +27,45 @@
 
 .navbar nav ul li {
   text-decoration: none;
-  margin: 1rem;
+
   display: inline-block;
   color: white;
+}
+
+.navbar .MobileNavigation {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .navbar .MobileNavigation {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar .Navigation {
+    display: none;
+  }
+  .navbar nav ul {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 100%;
+    border-top: 1px solid yellow;
+    position: absolute;
+    background: black;
+    top: 8rem;
+  }
+  .navbar .MobileNavigation .hamburgerIcon {
+    right: 10%;
+    position: absolute;
+    color: white;
+    cursor: pointer;
+  }
+  .navbar .MobileNavigation .closeIcon {
+    right: 10%;
+    position: absolute;
+    color: white;
+    cursor: pointer;
+  }
 }
