@@ -9,7 +9,6 @@
   justify-content: space-between;
   box-sizing: border-box;
   position: fixed;
-
   left: 0;
   right: 2rem;
   margin: auto;
@@ -34,6 +33,16 @@
 
 .navbar .MobileNavigation {
   display: none;
+}
+.Navigation ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+.Navigation ul li {
+  font-size: 1.5rem;
+  margin-right: 2rem;
 }
 
 @media (max-width: 700px) {
