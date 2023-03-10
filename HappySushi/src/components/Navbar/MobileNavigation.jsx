@@ -5,6 +5,11 @@ import { RiMenu4Line, RiCloseLine } from "react-icons/ri";
 
 const MobileNavigation = () => {
   const [navbar, setNavbar] = useState(false);
+  function handleClick() {
+    setNavbar((prevNavbar) => !prevNavbar);
+    console.log(navbar);
+  }
+
   const hamburgerIcon = (
     <RiMenu4Line
       className={styles.hamburgerIcon}
@@ -22,13 +27,10 @@ const MobileNavigation = () => {
       color="white"
     />
   );
-  function handleClick() {
-    setNavbar((prevNavbar) => !prevNavbar);
-    console.log(navbar);
-  }
+
   return (
     <nav className={styles.MobileNavigation}>
-      {navbar && <NavLinks />}
+      {navbar && <NavLinks handleClick={handleClick} />}
       {navbar ? closeIcon : hamburgerIcon}
     </nav>
   );

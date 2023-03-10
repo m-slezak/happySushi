@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const NavLinks = () => {
+const NavLinks = (props) => {
   const animateFrom = { opacity: 0, y: -40 };
   const animateTo = { opacity: 1, y: 0 };
 
@@ -11,6 +11,7 @@ const NavLinks = () => {
         initial={animateFrom}
         animate={animateTo}
         transition={{ delay: 0.1 }}
+        onClick={props.handleClick}
       >
         O nas
       </motion.li>
@@ -18,6 +19,7 @@ const NavLinks = () => {
         initial={animateFrom}
         animate={animateTo}
         transition={{ delay: 0.2 }}
+        onClick={props.handleClick}
       >
         Menu
       </motion.li>
@@ -25,6 +27,7 @@ const NavLinks = () => {
         initial={animateFrom}
         animate={animateTo}
         transition={{ delay: 0.3 }}
+        onClick={props.handleClick}
       >
         Kontakt
       </motion.li>
@@ -32,6 +35,7 @@ const NavLinks = () => {
         initial={animateFrom}
         animate={animateTo}
         transition={{ delay: 0.4 }}
+        onClick={props.handleClick}
       >
         Aktualności
       </motion.li>
