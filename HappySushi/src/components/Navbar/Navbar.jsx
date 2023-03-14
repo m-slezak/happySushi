@@ -9,7 +9,12 @@ import NavLinks from "./NavLinks";
 const Navbar = () => {
   return (
     <nav className={styles.navbar}>
-      <img src={Logo} alt="logo" className={styles.logo} />
+      <div className={styles.logoContainer}>
+        <img src={Logo} alt="logo" className={styles.logo} />
+        <p className={styles.logoWriting}>Happy Sushi</p>
+      </div>
+
+      <p></p>
       <MobileNavigation />
       <Navigation />
     </nav>

@@ -1,9 +1,26 @@
+@font-face {
+  font-family: logo;
+  src: url("../../assets/sake.otf");
+}
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
 .logo {
   width: 4rem;
   height: 4rem;
   border-radius: 0.5rem;
 }
+.logoWriting {
+  font-family: logo;
+  font-size: 6rem;
+  color: white;
+}
 .navbar {
+  background-image: url("../../assets/background.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,9 +31,9 @@
   margin: auto;
   z-index: 999;
   width: 100%;
-  max-width: 1200px;
-  height: 6rem;
-  background: #181818;
+
+  height: 35rem;
+
   padding: 2rem;
 }
 
