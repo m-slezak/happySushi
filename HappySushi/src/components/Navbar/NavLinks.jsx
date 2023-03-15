@@ -13,7 +13,7 @@ const NavLinks = (props) => {
         transition={{ delay: 0.1 }}
         onClick={props.handleClick}
       >
-        O nas
+        O NAS
       </motion.li>
       <motion.li
         initial={animateFrom}
@@ -21,7 +21,7 @@ const NavLinks = (props) => {
         transition={{ delay: 0.2 }}
         onClick={props.handleClick}
       >
-        Menu
+        MENU
       </motion.li>
       <motion.li
         initial={animateFrom}
@@ -29,7 +29,7 @@ const NavLinks = (props) => {
         transition={{ delay: 0.3 }}
         onClick={props.handleClick}
       >
-        Kontakt
+        KONTAKT
       </motion.li>
       <motion.li
         initial={animateFrom}
@@ -37,7 +37,7 @@ const NavLinks = (props) => {
         transition={{ delay: 0.4 }}
         onClick={props.handleClick}
       >
-        Aktualności
+        AKTUALNOŚCI
       </motion.li>
     </ul>
   );
